@@ -235,16 +235,109 @@
             color: var(--text-light);
         }
 
+        .profile-section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .experience-companies {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(37, 99, 235, 0.05);
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .values-section, .strengths-section {
+            margin-top: 3rem;
+        }
+
+        .values-section h4, .strengths-section h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .values-grid, .strengths-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .value-item, .strength-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .value-item:hover, .strength-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-icon, .strength-icon {
+            font-size: 1.5rem;
+        }
+
         .about-image {
             background: var(--gradient);
-            height: 400px;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 2rem;
-            font-weight: 600;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .company-info h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info-card p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info-card p:last-child {
+            margin-bottom: 0;
         }
 
         /* Services Section */
@@ -477,15 +570,68 @@
     <section class="section about" id="about">
         <div class="container">
             <h2 class="section-title" data-en="Who Are We" data-fr="Qui sommes-nous">Who Are We</h2>
-            <p class="section-subtitle" data-en="We are dedicated quality engineering professionals committed to excellence and continuous improvement in all aspects of quality assurance." data-fr="Nous sommes des professionnels dévoués de l'ingénierie qualité, engagés vers l'excellence et l'amélioration continue dans tous les aspects de l'assurance qualité.">We are dedicated quality engineering professionals committed to excellence and continuous improvement in all aspects of quality assurance.</p>
+            <p class="section-subtitle" data-en="Qualité Pro Canada - Quality, Health & Safety, and Environment consulting firm with extensive international experience and continuous improvement expertise." data-fr="Qualité Pro Canada - Cabinet de conseil en qualité, santé & sécurité et environnement, avec une très grande expérience internationale et expertise en amélioration continue.">Qualité Pro Canada - Quality, Health & Safety, and Environment consulting firm with extensive international experience and continuous improvement expertise.</p>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p data-en="With years of experience in quality engineering, we specialize in developing and implementing comprehensive quality management systems that ensure products and services meet the highest standards. Our approach combines traditional quality principles with modern methodologies to deliver exceptional results." data-fr="Avec des années d'expérience en ingénierie qualité, nous nous spécialisons dans le développement et la mise en œuvre de systèmes de gestion de la qualité complets qui garantissent que les produits et services répondent aux normes les plus élevées. Notre approche combine les principes de qualité traditionnels avec des méthodologies modernes pour offrir des résultats exceptionnels.">With years of experience in quality engineering, we specialize in developing and implementing comprehensive quality management systems that ensure products and services meet the highest standards. Our approach combines traditional quality principles with modern methodologies to deliver exceptional results.</p>
-                    <br>
-                    <p data-en="We believe in building long-term partnerships with our clients, understanding their unique challenges, and providing tailored solutions that drive continuous improvement and operational excellence." data-fr="Nous croyons en la construction de partenariats à long terme avec nos clients, en comprenant leurs défis uniques, et en fournissant des solutions sur mesure qui favorisent l'amélioration continue et l'excellence opérationnelle.">We believe in building long-term partnerships with our clients, understanding their unique challenges, and providing tailored solutions that drive continuous improvement and operational excellence.</p>
+                    <div class="profile-section">
+                        <h3 class="profile-name" data-en="Najib Elmo - Founder & General Manager" data-fr="Najib Elmo - Fondateur & Directeur Général">Najib Elmo - Founder & General Manager</h3>
+                        <p class="profile-title" data-en="QSE Consultant-Trainer-Auditor & Continuous Improvement Specialist" data-fr="Consultant-Formateur-Auditeur QSE & Spécialiste en Amélioration Continue">QSE Consultant-Trainer-Auditor & Continuous Improvement Specialist</p>
+                    </div>
+                    
+                    <p data-en="Graduate of prestigious Canadian schools with 21 years of rich industrial and service experience in multinational high-tech companies. Our pragmatic approach respects company rules and culture while ensuring each proposed action is useful, coherent, and respectful of everyone's work." data-fr="Lauréat de grandes écoles canadiennes avec 21 ans de riche expérience industrielle et services chez des sociétés multinationales de haute technologie. Notre approche pragmatique respecte les règles et la culture de l'entreprise tout en s'assurant que chaque action proposée est utile, cohérente et respectueuse du travail de chacun.">Graduate of prestigious Canadian schools with 21 years of rich industrial and service experience in multinational high-tech companies. Our pragmatic approach respects company rules and culture while ensuring each proposed action is useful, coherent, and respectful of everyone's work.</p>
+                    
+                    <div class="experience-companies">
+                        <p data-en="<strong>Professional Experience:</strong> ST Microelectronics, Sanmina SCI, Kuehne-Nagel, A2S Industries, G4S, SMCV, ADDEV Materials, and Qualité Pro Canada" data-fr="<strong>Expérience Professionnelle:</strong> ST Microelectronics, Sanmina SCI, Kuehne-Nagel, A2S Industries, G4S, SMCV, ADDEV Materials, et Qualité Pro Canada"><strong>Professional Experience:</strong> ST Microelectronics, Sanmina SCI, Kuehne-Nagel, A2S Industries, G4S, SMCV, ADDEV Materials, and Qualité Pro Canada</p>
+                    </div>
+                    
+                    <div class="values-section">
+                        <h4 data-en="Our Core Values" data-fr="Nos Valeurs">Our Core Values</h4>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <span class="value-icon">🎯</span>
+                                <span data-en="Integrity" data-fr="Intégrité">Integrity</span>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">👥</span>
+                                <span data-en="Customer Focus" data-fr="Focus Client">Customer Focus</span>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">💡</span>
+                                <span data-en="Innovation" data-fr="Innovation">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="about-image">
-                    <span data-en="Quality First" data-fr="Qualité d'abord">Quality First</span>
+                    <div class="company-info">
+                        <h3 data-en="Qualité Pro Canada" data-fr="Qualité Pro Canada">Qualité Pro Canada</h3>
+                        <p data-en="Excellence in Quality Management" data-fr="Excellence en Gestion Qualité">Excellence in Quality Management</p>
+                        <div class="contact-info-card">
+                            <p>📍 2845 Boulevard Langelier<br>Montréal, Québec H1N 3A4</p>
+                            <p>📞 +1 438 509 8083</p>
+                            <p>✉️ proquality.canada@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="strengths-section">
+                <h4 data-en="Our Key Strengths" data-fr="Nos Points Forts">Our Key Strengths</h4>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <span class="strength-icon">🏭</span>
+                        <span data-en="Rich Industrial & Service Experience" data-fr="Riche Expérience Industrielle & Services">Rich Industrial & Service Experience</span>
+                    </div>
+                    <div class="strength-item">
+                        <span class="strength-icon">🎨</span>
+                        <span data-en="Creativity" data-fr="Créativité">Creativity</span>
+                    </div>
+                    <div class="strength-item">
+                        <span class="strength-icon">💪</span>
+                        <span data-en="Perseverance" data-fr="Persévérance">Perseverance</span>
+                    </div>
                 </div>
             </div>
         </div>
