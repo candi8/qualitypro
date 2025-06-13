@@ -883,7 +883,54 @@ p {
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        margin-top: var(--space-xl);
+    }
+    
+    .experience-box {
+        max-width: 100%;
+    }
+    
+    .service-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-primary);
+        padding: var(--space-md);
+        box-shadow: var(--shadow-md);
+        border-radius: 0 0 var(--radius) var(--radius);
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-category-title {
+        font-size: 1.2rem;
+        padding: var(--space-md) var(--space-lg);
+    }
+    
+    .service-cards {
+        padding: var(--space-lg);
+    }
+    
+    .service-card-content {
+        padding: var(--space-lg);
+    }
+
     .nav-menu {
         position: fixed;
         top: 0;

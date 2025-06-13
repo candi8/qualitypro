@@ -4,12 +4,6 @@ Avec plus de deux décennies d'expérience dans les secteurs industriels et de s
 
 Notre approche repose sur la maîtrise des activités quotidiennes comme levier pour réussir les projets stratégiques. Nos missions incluent également l'audit de certification, la formation professionnelle et la mise en conformité aux normes ISO dans divers secteurs d'activité. Chaque action est conçue pour apporter une valeur ajoutée mesurable.
 
-**Nos Services**
-
-* Conseil et accompagnement dans la mise en place de systèmes de management (ISO 9001, ISO 14001, ISO 45001, etc.)
-* Audits internes et audits blancs
-* Formations sur les référentiels ISO
-* Accompagnement en démarche d'amélioration continue
 
 **Nos Atouts**
 
