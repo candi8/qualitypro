@@ -385,6 +385,7 @@ body {
   margin-bottom: 4rem;
 }
 
+
 .category-title {
   font-size: 1.75rem;
   font-weight: 600;
@@ -458,10 +459,32 @@ body {
   border-color: var(--primary-color);
 }
 
+/* Service icon standardization */
 .service-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px; /* Fixed height for consistency */
+  width: 240px;  /* Fixed width for consistency */
+  margin: 0 auto 1rem auto; /* Center the icon */
+}
+
+.service-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px; /* Slight rounding for images */
+}
+
+/* Ensure emoji icons are centered and sized consistently */
+.service-icon:not(:has(img)) {
+  font-size: 3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-card h3 {
