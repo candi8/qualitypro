@@ -1,9 +1,34 @@
 <!-- hero.html -->
-<!-- Add your hero section content here -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1 class="hero-title" data-en="Quality Engineering Excellence" data-fr="Excellence en Ingénierie Qualité">Quality Engineering Excellence</h1>
-        <p class="hero-subtitle" data-en="Delivering precision, reliability, and innovation in every project through comprehensive quality assurance solutions." data-fr="Fournir précision, fiabilité et innovation dans chaque projet grâce à des solutions complètes d'assurance qualité.">Delivering precision, reliability, and innovation in every project through comprehensive quality assurance solutions.</p>
-        <a href="#contact" class="cta-button" data-en="Get Started" data-fr="Commencer">Get Started</a>
-    </div>
+<section class="hero" id="home" role="banner" aria-label="Qualité Pro Canada - Services QHSE">
+  <div class="hero-content">
+    <h1 class="hero-title"
+        data-en="QHSE Expertise for Lasting Performance"
+        data-fr="Expertise QHSE pour une Performance Durable">
+      QHSE Expertise for Lasting Performance
+    </h1>
+
+    <p class="hero-subtitle"
+       data-en="QHSE = Quality, Health, Safety & Environment. We deliver audits, training, and coaching to help your organization achieve compliance and continuous improvement."
+       data-fr="QHSE = Qualité, Hygiène, Sécurité & Environnement. Nous proposons des audits, des formations et du coaching pour aider votre organisation à atteindre la conformité et l’amélioration continue.">
+      QHSE = Quality, Health, Safety & Environment. We deliver audits, training, and coaching to help your organization achieve compliance and continuous improvement.
+    </p>
+
+    <a href="#contact"
+       class="cta-button"
+       aria-label="Open contact form to start a project"
+       data-en="Get Started"
+       data-fr="Commencer">
+      Get Started
+    </a>
+  </div>
 </section>
+
+<!-- Optional: language switcher helper -->
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+  }
+  // Example: switchLang('fr'); // call when user clicks FR button
+</script>
