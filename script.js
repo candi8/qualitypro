@@ -5,7 +5,8 @@ function initScripts() {
   function toggleLanguage() {
     currentLanguage = currentLanguage === "en" ? "fr" : "en";
     const langButton = document.getElementById("lang-toggle");
-    if (langButton) langButton.textContent = currentLanguage === "en" ? "FR" : "EN";
+    if (langButton)
+      langButton.textContent = currentLanguage === "en" ? "FR" : "EN";
 
     const elements = document.querySelectorAll("[data-en][data-fr]");
     elements.forEach((element) => {
@@ -51,7 +52,7 @@ function initScripts() {
         alert(
           currentLanguage === "en"
             ? "Please fill in all fields."
-            : "Veuillez remplir tous les champs."
+            : "Veuillez remplir tous les champs.",
         );
         return;
       }
@@ -66,7 +67,7 @@ function initScripts() {
         alert(
           currentLanguage === "en"
             ? "Thank you for your message! We will get back to you soon."
-            : "Merci pour votre message ! Nous vous recontacterons bientôt."
+            : "Merci pour votre message ! Nous vous recontacterons bientôt.",
         );
         this.reset();
         submitBtn.textContent = originalText;
@@ -87,6 +88,29 @@ function initScripts() {
       navbar.style.boxShadow = "none";
     }
   });
+  function loadCompanyPictures() {
+    const companiesGrid = document.querySelector(".companies-grid");
 
+    if (!companiesGrid) {
+      // companies.html not loaded yet → retry
+      setTimeout(loadCompanyPictures, 100);
+      return;
+    }
+
+    for (let i = 2; i <= 31; i++) {
+      const logoDiv = document.createElement("div");
+      logoDiv.className = "company-logo";
+
+      const img = document.createElement("img");
+      img.src = `assets/logos/Picture${i}.png`;
+      img.alt = `Company logo ${i}`;
+      img.loading = "lazy";
+
+      logoDiv.appendChild(img);
+      companiesGrid.appendChild(logoDiv);
+    }
+  }
+
+  loadCompanyPictures();
   console.log("All scripts initialized successfully");
 }

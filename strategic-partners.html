@@ -1,0 +1,124 @@
+<section class="section trusted-companies" id="strategic-partners">
+  <div class="container">
+    <h2 class="section-title" data-en="Strategic Partnerships" data-fr="Partenariats Stratégiques">Strategic Partnerships</h2>
+    <p class="section-subtitle"
+       data-en="Collaborating with industry leaders to deliver world-class expertise and services"
+       data-fr="Collaborant avec les leaders de l'industrie pour offrir une expertise et des services de classe mondiale">
+       Collaborant avec les leaders de l'industrie pour offrir une expertise et des services de classe mondiale
+    </p>
+
+    <!-- Trust Management Partnership -->
+    <div style="max-width: 900px; margin: 3rem auto;">
+      <div class="team-card" style="padding: 3rem;">
+        
+        <!-- Partnership Banner - Language Aware -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <img src="assets/trust-management-en.jpeg" 
+               alt="Trust Management Strategic Partnership" 
+               id="partnership-banner-en"
+               style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+          <img src="assets/trust-management-fr.jpeg" 
+               alt="Partenariat Stratégique Trust Management" 
+               id="partnership-banner-fr"
+               style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); display: none;">
+        </div>
+
+        <!-- Partnership Details -->
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--primary-color);">
+            <span data-en="Trust Management" data-fr="Trust Management">Trust Management</span>
+          </h3>
+          
+          <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 1.5rem;">
+            <span data-en="Associate Expert in Morocco" data-fr="Expert associé au Maroc">Expert associé au Maroc</span>
+          </p>
+
+          <div style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(59, 130, 246, 0.02)); 
+                      padding: 2rem; border-radius: 16px; border-left: 4px solid var(--primary-color); margin-top: 2rem;">
+            <h4 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; color: var(--dark-color);">
+              Talbi Boussoni
+            </h4>
+            <p style="font-size: 1.05rem; color: var(--text-color); margin-bottom: 0.75rem;">
+              <span data-en="Managing Director – Trust Management" 
+                    data-fr="Managing Director – Trust Management">
+                Managing Director – Trust Management
+              </span>
+            </p>
+            
+            <div class="team-expertise" style="justify-content: center; margin: 1.5rem 0;">
+              <span class="expertise-tag" 
+                    data-en="QSE Consultant" 
+                    data-fr="Consultant QSE">Consultant QSE</span>
+              <span class="expertise-tag" 
+                    data-en="Trainer" 
+                    data-fr="Formateur">Formateur</span>
+              <span class="expertise-tag" 
+                    data-en="QSE Audit Manager" 
+                    data-fr="Responsable d'audit QSE">Responsable d'audit QSE</span>
+            </div>
+
+            <p style="font-size: 1rem; color: var(--text-color); line-height: 1.6; margin-top: 1.5rem;">
+              <strong>Bureau Veritas Morocco & SGS Morocco</strong>
+            </p>
+          </div>
+
+          <!-- Partnership Benefits -->
+          <div style="margin-top: 3rem;">
+            <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--dark-color);">
+              <span data-en="Partnership Benefits" data-fr="Avantages du Partenariat">Avantages du Partenariat</span>
+            </h4>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+              <div class="value-item">
+                <span class="value-icon">🌍</span>
+                <span data-en="International Expertise" data-fr="Expertise Internationale">Expertise Internationale</span>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">✅</span>
+                <span data-en="Certification Excellence" data-fr="Excellence en Certification">Excellence en Certification</span>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">🎯</span>
+                <span data-en="Quality Assurance" data-fr="Assurance Qualité">Assurance Qualité</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional note -->
+    <div style="text-align: center; margin-top: 2rem; opacity: 0.8;">
+      <p data-en="Together, we deliver comprehensive quality, safety, and environmental management solutions across Canada and Morocco"
+         data-fr="Ensemble, nous offrons des solutions complètes de gestion de la qualité, de la sécurité et de l'environnement au Canada et au Maroc">
+         Ensemble, nous offrons des solutions complètes de gestion de la qualité, de la sécurité et de l'environnement au Canada et au Maroc
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Language toggle script for partnership banners -->
+<script>
+  // This script will be triggered by the main language toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const originalToggle = document.getElementById('lang-toggle');
+    if (originalToggle) {
+      originalToggle.addEventListener('click', togglePartnershipBanners);
+    }
+  });
+
+  function togglePartnershipBanners() {
+    const enBanner = document.getElementById('partnership-banner-en');
+    const frBanner = document.getElementById('partnership-banner-fr');
+    
+    if (enBanner && frBanner) {
+      if (enBanner.style.display === 'none') {
+        enBanner.style.display = 'block';
+        frBanner.style.display = 'none';
+      } else {
+        enBanner.style.display = 'none';
+        frBanner.style.display = 'block';
+      }
+    }
+  }
+</script>
