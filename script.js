@@ -88,29 +88,38 @@ function initScripts() {
       navbar.style.boxShadow = "none";
     }
   });
-  function loadCompanyPictures() {
-    const companiesGrid = document.querySelector(".companies-grid");
 
-    if (!companiesGrid) {
-      // companies.html not loaded yet → retry
-      setTimeout(loadCompanyPictures, 100);
+  // Load reference client logos dynamically
+  function loadReferenceClientLogos() {
+    const referenceClientsGrid = document.querySelector("#reference-clients-grid");
+
+    if (!referenceClientsGrid) {
+      // reference-clients.html not loaded yet → retry
+      setTimeout(loadReferenceClientLogos, 100);
       return;
     }
 
+    // Load Picture2 through Picture31 dynamically
     for (let i = 2; i <= 31; i++) {
       const logoDiv = document.createElement("div");
       logoDiv.className = "company-logo";
 
       const img = document.createElement("img");
       img.src = `assets/logos/Picture${i}.png`;
-      img.alt = `Company logo ${i}`;
+      img.alt = `Reference Client Logo ${i}`;
       img.loading = "lazy";
+      img.onerror = function() {
+        console.warn(`Failed to load: assets/logos/Picture${i}.png`);
+      };
 
       logoDiv.appendChild(img);
-      companiesGrid.appendChild(logoDiv);
+      referenceClientsGrid.appendChild(logoDiv);
     }
+
+    console.log("Reference client logos loaded successfully");
   }
 
-  loadCompanyPictures();
+  // Initialize dynamic loading
+  loadReferenceClientLogos();
   console.log("All scripts initialized successfully");
 }
